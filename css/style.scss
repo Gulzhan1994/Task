@@ -38,6 +38,7 @@ ul {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0px 20px;
 }
 
 .header {
@@ -110,6 +111,7 @@ ul {
         align-items: center;
         justify-content: space-between;
         .language {
+            display: inline-block;
             color: #FFFFFF;
             line-height: 13px;
             font-size: 0.875em;
@@ -229,6 +231,7 @@ ul {
         margin-top: 0px;
     }
     &__content-img {
+        display: block;
         height: 308px;
         width: 544px;
         img {
@@ -390,9 +393,9 @@ ul {
             font-family: 'Conv_GothamPro-Bold';
             font-weight: 700;
             background: #DBA682;
-            padding: 14px 52px;
-            margin-right: 400px;
-            margin-left: 400px;
+            padding: 14px 0px;
+            margin-right: 360px;
+            margin-left: 360px;
             .button {
                 display: inline-block;
                 text-align: center;
@@ -465,3 +468,263 @@ ul {
     }
 }
 
+@media(max-width: 1160px) {
+    .programmer__items {
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+        justify-content: space-around;
+    }
+    .programmer__item {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1150px) {
+    .header__content-left {
+        margin-right: 120px;
+    }
+}
+
+@media(max-width:1110px) {
+    .header__content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header__content-right {
+        flex-basis: 510px;
+    }
+    .header__content-left {
+        margin-right: 0px;
+    }
+    .header__content-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__content-item {
+        width: 48%;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 320px;
+        margin-left: 320px;
+    }
+}
+
+@media(max-width: 1080px) {
+    .aboutconference__content {
+        flex-direction: column;
+    }
+    .aboutconference__content-left {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutconference__content-img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 290px;
+        margin-left: 290px;
+    }
+}
+
+@media(max-width: 950px) {
+    .programmer-conference__contentbox-button {
+        margin-right: 250px;
+        margin-left: 250px;
+    }
+    .programmer-conference .faq.active .programmer-conference__content-text {
+        max-height: 400px;
+    }
+}
+
+@media(max-width: 890px) {
+    .programmer__items {
+        grid-template-columns: repeat(2, 35%);
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 220px;
+        margin-left: 220px;
+    }
+}
+
+@media(max-width: 820px) {
+    .header__top {
+        display: block;
+    }
+    .header__top-time {
+        margin-bottom: 60px;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 190px;
+        margin-left: 190px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header__content-logo img {
+        width: 100%;
+    }
+    .header__content-right {
+        flex-basis: 100%;
+        margin-bottom: 70px;
+    }
+    .programmer__items {
+        grid-template-columns: repeat(2, 40%);
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    .programmer-conference__headline {
+        display: block;
+    }
+    .programmer .title {
+        margin-bottom: 20px;
+    }
+    .programmer-conference__link {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .programmer__link {
+        margin-bottom: 40px;
+    }
+    .programmer-conference__tabs .tabs__link:not(:last-child) {
+        margin-right: 25px;
+    }
+    .programmer-conference .faq.active .programmer-conference__content-text {
+        max-height: 500px;
+    }
+}
+
+@media(max-width: 680px) {
+    .programmer__items {
+        grid-template-columns: repeat(2, 54%);
+        justify-content: space-between;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 110px;
+        margin-left: 110px;
+    }
+    .programmer-conference__tabs {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .programmer-conference__tabs .tabs__link:not(:last-child) {
+        margin-right: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .programmer-conference__tabs .tabs__link--active::after {
+        display: none;
+    }
+    .programmer-conference__tabs .tabs__link--active::before {
+        display: none;
+    }
+    .programmer-conference .faq.active .programmer-conference__content-text {
+        max-height: 600px;
+    }
+}
+
+@media(max-width: 620px) {
+    .aboutconference__content-img {
+        width: 100%;
+    }
+    .aboutconference__content-img img {
+        width: 100%;
+    }
+    .programmer__items {
+        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .programmer-conference .faq.active .programmer-conference__content-text {
+        max-height: 800px;
+    }
+}
+
+@media(max-width: 590px) {
+    .header__top {
+        margin-bottom: 100px;
+    }
+    .header__content-item {
+        width: 100%;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    .programmer-conference__inner {
+        padding: 40px 30px 80px 30px;
+    }
+}
+
+@media(max-width: 480px) {
+    .header__top-nav .time {
+        font-size: 3em;
+    }
+    .header__top-nav .seconds::before {
+        top: 20px;
+        font-size: 4em;
+    }
+    .header__top-nav .hours::before {
+        top: 20px;
+        font-size: 4em;
+    }
+    .header__top-nav .minutes::before {
+        top: 20px;
+        font-size: 4em;
+    }
+    .header__wrapper {
+        padding-top: 20px;
+    }
+    .aboutconference__content-img img {
+        height: 100%;
+        object-fit: contain;
+    }
+    .aboutconference__content-img {
+        height: 100%;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .programmer-conference .faq.active .programmer-conference__content-text {
+        max-height: 1500px;
+    }
+    .programmer-conference__items {
+        display: block;
+    }
+}
+
+@media(max-width:400px) {
+    .header__top-nav .time {
+        font-size: 2em;
+    }
+    .header__top-nav .seconds::before {
+        top: 23px;
+        font-size: 3em;
+    }
+    .header__top-nav .hours::before {
+        top: 23px;
+        font-size: 3em;
+    }
+    .header__top-nav .minutes::before {
+        top: 23px;
+        font-size: 3em;
+    }
+    .header__top .language:not(:last-child) {
+        margin-right: 5px;
+    }
+    .programmer-conference__contentbox-button {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .programmer-conference .faq {
+        padding: 0px 10px;
+    }
+}
